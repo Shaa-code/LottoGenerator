@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane fx:controller="com.lotto.lottogenerator.LottoGeneratorController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" hgap="15" vgap="15" stylesheets="@styles.css">
+
+    <HBox GridPane.rowIndex="0" spacing="15" alignment="CENTER_LEFT">
+        <Label fx:id="result1" prefWidth="60" prefHeight="60" styleClass="circular-label"/>
+        <Label fx:id="result2" prefWidth="60" prefHeight="60" styleClass="circular-label"/>
+        <Label fx:id="result3" prefWidth="60" prefHeight="60" styleClass="circular-label"/>
+        <Label fx:id="result4" prefWidth="60" prefHeight="60" styleClass="circular-label"/>
+        <Label fx:id="result5" prefWidth="60" prefHeight="60" styleClass="circular-label"/>
+        <Label fx:id="result6" prefWidth="60" prefHeight="60" styleClass="circular-label"/>
+
+        <Button fx:id="generateButton" text="생성" prefWidth="100" prefHeight="40"/>
+        <Button fx:id="saveButton" text="저장" prefWidth="100" prefHeight="40" onAction="#handleSaveButton" />
+        <Button fx:id="resetButton" text="초기화" prefWidth="100" prefHeight="40"/>
+    </HBox>
+
+    <VBox GridPane.rowIndex="1" alignment="CENTER">
+        <VBox.margin>
+            <Insets left="100"/>
+        </VBox.margin>
+        <HBox spacing="15" alignment="CENTER">
+            <GridPane hgap="10" vgap="10" alignment="CENTER">
+                <children>
+                    <Button fx:id="slot1Button" text="" GridPane.columnIndex="0" GridPane.rowIndex="0" minWidth="130" prefHeight="40" maxWidth="Infinity"/>
+                    <Button fx:id="slot2Button" text="" GridPane.columnIndex="0" GridPane.rowIndex="1" minWidth="130" prefHeight="40" maxWidth="Infinity"/>
+                    <Button fx:id="slot3Button" text="" GridPane.columnIndex="0" GridPane.rowIndex="2" minWidth="130" prefHeight="40" maxWidth="Infinity"/>
+                    <Button fx:id="slot4Button" text="" GridPane.columnIndex="0" GridPane.rowIndex="3" minWidth="130" prefHeight="40" maxWidth="Infinity"/>
+                    <Button fx:id="slot5Button" text="" GridPane.columnIndex="0" GridPane.rowIndex="4" minWidth="130" prefHeight="40" maxWidth="Infinity"/>
+                    <Button fx:id="slot6Button" text="" GridPane.columnIndex="0" GridPane.rowIndex="5" minWidth="130" prefHeight="40" maxWidth="Infinity"/>
+                    <Label fx:id="currentSlotLabel" text="현재 선택된 슬롯 : " GridPane.columnIndex="0" GridPane.rowIndex="6" alignment="CENTER"/>
+
+                    <!-- Spacer HBox -->
+                    <Separator orientation="VERTICAL" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.rowSpan="6"/>
+
+                    <Button fx:id="b1" text="1" GridPane.columnIndex="2" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b2" text="2" GridPane.columnIndex="3" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b3" text="3" GridPane.columnIndex="4" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b4" text="4" GridPane.columnIndex="5" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b5" text="5" GridPane.columnIndex="6" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b6" text="6" GridPane.columnIndex="7" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b7" text="7" GridPane.columnIndex="8" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+
+                    <Button fx:id="b8" text="8" GridPane.columnIndex="2" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b9" text="9" GridPane.columnIndex="3" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b10" text="10" GridPane.columnIndex="4" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b11" text="11" GridPane.columnIndex="5" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b12" text="12" GridPane.columnIndex="6" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b13" text="13" GridPane.columnIndex="7" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b14" text="14" GridPane.columnIndex="8" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+
+                    <Button fx:id="b15" text="15" GridPane.columnIndex="2" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b16" text="16" GridPane.columnIndex="3" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b17" text="17" GridPane.columnIndex="4" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b18" text="18" GridPane.columnIndex="5" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b19" text="19" GridPane.columnIndex="6" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b20" text="20" GridPane.columnIndex="7" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b21" text="21" GridPane.columnIndex="8" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+
+                    <Button fx:id="b22" text="22" GridPane.columnIndex="2" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b23" text="23" GridPane.columnIndex="3" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b24" text="24" GridPane.columnIndex="4" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b25" text="25" GridPane.columnIndex="5" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b26" text="26" GridPane.columnIndex="6" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b27" text="27" GridPane.columnIndex="7" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b28" text="28" GridPane.columnIndex="8" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+
+                    <Button fx:id="b29" text="29" GridPane.columnIndex="2" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b30" text="30" GridPane.columnIndex="3" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b31" text="31" GridPane.columnIndex="4" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b32" text="32" GridPane.columnIndex="5" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b33" text="33" GridPane.columnIndex="6" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b34" text="34" GridPane.columnIndex="7" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b35" text="35" GridPane.columnIndex="8" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+
+                    <Button fx:id="b36" text="36" GridPane.columnIndex="2" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b37" text="37" GridPane.columnIndex="3" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b38" text="38" GridPane.columnIndex="4" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b39" text="39" GridPane.columnIndex="5" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b40" text="40" GridPane.columnIndex="6" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b41" text="41" GridPane.columnIndex="7" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b42" text="42" GridPane.columnIndex="8" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+
+                    <Button fx:id="b43" text="43" GridPane.columnIndex="2" GridPane.rowIndex="6" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b44" text="44" GridPane.columnIndex="3" GridPane.rowIndex="6" prefWidth="40" prefHeight="40"/>
+                    <Button fx:id="b45" text="45" GridPane.columnIndex="4" GridPane.rowIndex="6" prefWidth="40" prefHeight="40"/>
+
+                    <Separator orientation="VERTICAL" GridPane.columnIndex="9" GridPane.rowIndex="0" GridPane.rowSpan="7"/>
+
+                    <ToggleButton fx:id="r1" text="1" GridPane.columnIndex="10" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r2" text="2" GridPane.columnIndex="11" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r3" text="3" GridPane.columnIndex="12" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r4" text="4" GridPane.columnIndex="13" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r5" text="5" GridPane.columnIndex="14" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r6" text="6" GridPane.columnIndex="15" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r7" text="7" GridPane.columnIndex="16" GridPane.rowIndex="0" prefWidth="40" prefHeight="40"/>
+
+                    <ToggleButton fx:id="r8" text="8" GridPane.columnIndex="10" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r9" text="9" GridPane.columnIndex="11" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r10" text="10" GridPane.columnIndex="12" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r11" text="11" GridPane.columnIndex="13" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r12" text="12" GridPane.columnIndex="14" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r13" text="13" GridPane.columnIndex="15" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r14" text="14" GridPane.columnIndex="16" GridPane.rowIndex="1" prefWidth="40" prefHeight="40"/>
+
+                    <ToggleButton fx:id="r15" text="15" GridPane.columnIndex="10" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r16" text="16" GridPane.columnIndex="11" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r17" text="17" GridPane.columnIndex="12" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r18" text="18" GridPane.columnIndex="13" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r19" text="19" GridPane.columnIndex="14" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r20" text="20" GridPane.columnIndex="15" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r21" text="21" GridPane.columnIndex="16" GridPane.rowIndex="2" prefWidth="40" prefHeight="40"/>
+
+                    <ToggleButton fx:id="r22" text="22" GridPane.columnIndex="10" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r23" text="23" GridPane.columnIndex="11" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r24" text="24" GridPane.columnIndex="12" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r25" text="25" GridPane.columnIndex="13" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r26" text="26" GridPane.columnIndex="14" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r27" text="27" GridPane.columnIndex="15" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r28" text="28" GridPane.columnIndex="16" GridPane.rowIndex="3" prefWidth="40" prefHeight="40"/>
+
+                    <ToggleButton fx:id="r29" text="29" GridPane.columnIndex="10" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r30" text="30" GridPane.columnIndex="11" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r31" text="31" GridPane.columnIndex="12" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r32" text="32" GridPane.columnIndex="13" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r33" text="33" GridPane.columnIndex="14" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r34" text="34" GridPane.columnIndex="15" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r35" text="35" GridPane.columnIndex="16" GridPane.rowIndex="4" prefWidth="40" prefHeight="40"/>
+
+                    <ToggleButton fx:id="r36" text="36" GridPane.columnIndex="10" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r37" text="37" GridPane.columnIndex="11" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r38" text="38" GridPane.columnIndex="12" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r39" text="39" GridPane.columnIndex="13" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r40" text="40" GridPane.columnIndex="14" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r41" text="41" GridPane.columnIndex="15" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r42" text="42" GridPane.columnIndex="16" GridPane.rowIndex="5" prefWidth="40" prefHeight="40"/>
+
+                    <ToggleButton fx:id="r43" text="43" GridPane.columnIndex="10" GridPane.rowIndex="6" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r44" text="44" GridPane.columnIndex="11" GridPane.rowIndex="6" prefWidth="40" prefHeight="40"/>
+                    <ToggleButton fx:id="r45" text="45" GridPane.columnIndex="12" GridPane.rowIndex="6" prefWidth="40" prefHeight="40"/>
+                </children>
+            </GridPane>
+        </HBox>
+    </VBox>
+
+    <TextArea fx:id="displayArea" GridPane.rowIndex="3" prefRowCount="10" prefColumnCount="50"/>
+
+</GridPane>
